@@ -3,7 +3,7 @@ import { DataSource } from "typeorm"
 
 export const dataBaseProviders = [
     {
-        procide: 'DATA_SOURCE',
+        provide: 'DATA_SOURCE',
         useFactory: async () => {
            
             const dataSource = new DataSource({
