@@ -17,4 +17,8 @@ export class Pauta {
 
     @Column({type: 'timestamp', nullable: true})
     fechamento?: Date;
+
+    obterStatus(): string{
+    return "Sem status";
+    }
 }
