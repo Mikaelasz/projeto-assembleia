@@ -29,4 +29,8 @@ export class PautasService {
         return new Result(pauta, null);
     }
 
+    async findAll(): Promise<Pauta[]>{
+        return await this.pautaRepository.find();
+    }
+
 }
