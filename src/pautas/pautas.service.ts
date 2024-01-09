@@ -52,4 +52,10 @@ export class PautasService {
 
     }
 
+    async findById(id: string): Promise<Pauta>{
+        return await this.pautaRepository.findOneBy({
+            id: id
+        });
+    }
+
 }
